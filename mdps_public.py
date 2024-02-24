@@ -11,7 +11,6 @@ heart_disease_model = pickle.load(open('heart_disease_model.sav', 'rb'))
 
 parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
 
-
 # sidebar for navigation
 with st.sidebar:
     
@@ -133,6 +132,9 @@ if (selected == 'Diabetes Prediction'):
           if (int(Insulin)>200):
               ins='insulin level is not in normal range\n ****\n medicine-1'
               st.success(ins)
+          if (int(Insulin)== 0):
+              ins='Insulin deficiency\n ****\n medicine-1'
+              st.success(ins)
         else:
           diab_diagnosis = '***THE PERSON IS NOT DIABETIC***'
           st.success(diab_diagnosis)
@@ -170,6 +172,9 @@ if (selected == 'Diabetes Prediction'):
                   st.success(bmi)
           if (int(Insulin)>200):
               ins='Insulin level is not in normal range\n ****\n medicine-1'
+              st.success(ins)
+          if (int(Insulin)== 0):
+              ins='Insulin deficiency\n ****\n medicine-1'
               st.success(ins)
 
           vitals = '***REMAINING VITALS ARE NOT PROBLEMATIC AT PRESENT BUT TAKE CARE***'
