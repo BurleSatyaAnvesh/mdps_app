@@ -135,7 +135,7 @@ if (selected == 'Diabetes Prediction'):
           if (int(Insulin)== 0):
               ins='Insulin deficiency'
               st.success(ins)
-          medicine = '***MEDICINE***'
+          medicine = '***MEDICINE REQUIRED***'
           st.success(medicine)
         else:
           diab_diagnosis = '***THE PERSON IS NOT DIABETIC***'
@@ -178,7 +178,7 @@ if (selected == 'Diabetes Prediction'):
           if (int(Insulin)== 0):
               ins='Insulin deficiency'
               st.success(ins)
-          medicine = '***MEDICINE***'
+          medicine = '***MEDICINE REQUIRED***'
           st.success(medicine)
 
           vitals = '***REMAINING VITALS ARE NOT PROBLEMATIC AT PRESENT BUT TAKE CARE***'
@@ -285,7 +285,7 @@ if (selected == 'Heart Disease Prediction'):
               if(int(slope)<3):
                   vessels='Fast blood flow'
                   st.success(vessels)
-          medicine = '***MEDICINE***'
+          medicine = '***MEDICINE REQUIRED***'
           st.success(medicine)
         else:
           heart_diagnosis = '***THE PERSON DOES NOT HAVE HEART DISEASE***'
@@ -324,7 +324,7 @@ if (selected == 'Heart Disease Prediction'):
               if(int(slope)<3):
                   vessels='Fast blood flow'
                   st.success(vessels)
-          medicine = '***MEDICINE***'
+          medicine = '***MEDICINE REQUIRED***'
           st.success(medicine)
           vitals = '***REMAINING VITALS ARE NOT PROBLEMATIC AT PRESENT BUT TAKE CARE***'
           st.success (vitals)
@@ -466,7 +466,7 @@ if (selected == "Parkinsons Prediction"):
           if (float(flo) < 65.476):
               fo14 ='Reduced vocal fold vibration or breathiness'
               st.success(fo14)
-          medicine = '***MEDICINE***'
+          medicine = '***MEDICINE REQUIRED***'
           st.success(medicine)
             
           
@@ -520,7 +520,7 @@ if (selected == "Parkinsons Prediction"):
           if (float(flo) < 65.476):
               fo14 ='Reduced vocal fold vibration or breathiness'
               st.success(fo14)
-          medicine = '***MEDICINE***'
+          medicine = '***MEDICINE REQUIRED***'
           st.success(medicine)
           vitals = '***REMAINING VITALS ARE NOT PROBLEMATIC AT PRESENT BUT TAKE CARE***'
           st.success (vitals)
