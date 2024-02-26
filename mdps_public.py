@@ -100,82 +100,86 @@ if (selected == 'Diabetes Prediction'):
           precaution='***ISSUES***'
           st.success(precaution)
           if (int(Pregnancies) > 3):
-              pregnancies = 'Pregnancies are More than 3\n ****\n medicine-1 '
+              pregnancies = 'Pregnancies are More than 3 '
               st.success(pregnancies)
           if (int(Glucose) > 100 or int(Glucose) < 70) :
               if (int(Glucose) > 100):
-                  glucose = 'Glucose level is more\n ****\n medicine-1'
+                  glucose = 'Glucose level is more'
                   st.success(glucose)
               else:
-                  glucose = 'Glucose level is less\n ****\n medicine-1'
+                  glucose = 'Glucose level is less'
                   st.success(glucose)
           if (int(BloodPressure) > 100 or int(BloodPressure)<60):
               if(int(BloodPressure)>100):
-                  bp =  'BloodPressure is High\n ****\n medicine-1'
+                  bp =  'BloodPressure is High'
                   st.success(bp)
               else:
-                  bp = 'BloodPressure is Low\n ****\n medicine-1'
+                  bp = 'BloodPressure is Low'
                   st.success(bp)
           if (int(Age)>=18):
               if(float(BMI)<18.5):
-                  bmi = 'BMI = Under weight\n ****\n medicine-1'
+                  bmi = 'BMI = Under weight'
                   st.success(bmi)
               elif(float(BMI) == 18.5 and float(BMI) <= 24.9):
-                  bmi = 'BMI = Normal Weight\n ****\n '
+                  bmi = 'BMI = Normal Weight '
                   st.success(bmi)
               elif( float(BMI) == 25 and float(BMI) <= 29.9):
-                  bmi = 'BMI = Over Weight\n ****\n Do exercise'
+                  bmi = 'BMI = Over Weight'
                   st.success(bmi)
               else:
-                  bmi = 'BMI = Obesity\n ****\n Do exercise'
+                  bmi = 'BMI = Obesity'
                   st.success(bmi)
           if (int(Insulin)>200):
-              ins='insulin level is not in normal range\n ****\n medicine-1'
+              ins='insulin level is not in normal range'
               st.success(ins)
           if (int(Insulin)== 0):
-              ins='Insulin deficiency\n ****\n medicine-1'
+              ins='Insulin deficiency'
               st.success(ins)
+          medicine = 'medicine'
+          st.success(medicine)
         else:
           diab_diagnosis = '***THE PERSON IS NOT DIABETIC***'
           st.success(diab_diagnosis)
           precaution='***BUT SOME ISSUES***'
           st.success(precaution)
           if (int(Pregnancies) > 3):
-              pregnancies = 'Pregnancies are More than 3\n ****\n medicine-1 '
+              pregnancies = 'Pregnancies are More than 3'
               st.success(pregnancies)
           if (int(Glucose) > 100 or int(Glucose) < 70) :
               if (int(Glucose) > 100):
-                  glucose = 'Glucose level is more\n ****\n medicine-1'
+                  glucose = 'Glucose level is more1'
                   st.success(glucose)
               else:
-                  glucose = 'Glucose level is less\n ****\n medicine-1'
+                  glucose = 'Glucose level is less'
                   st.success(glucose)
           if (int(BloodPressure) > 100 or int(BloodPressure)<60):
               if(int(BloodPressure)>100):
-                  bp =  'BloodPressure is High\n ****\n medicine-1'
+                  bp =  'BloodPressure is High'
                   st.success(bp)
               else:
-                  bp = 'BloodPressure is Low\n ****\n medicine-1'
+                  bp = 'BloodPressure is Low1'
                   st.success(bp)
           if (int(Age)>=18):
               if(float(BMI)<18.5):
-                  bmi = 'BMI = Under weight\n ****\n medicine-1'
+                  bmi = 'BMI = Under weight'
                   st.success(bmi)
               elif(float(BMI) == 18.5 and float(BMI) <= 24.9):
-                  bmi = 'BMI = Normal Weight\n ****\n '
+                  bmi = 'BMI = Normal Weight '
                   st.success(bmi)
               elif( float(BMI) == 25 and float(BMI) <= 29.9):
-                  bmi = 'BMI = Over Weight\n ****\n Do exercise'
+                  bmi = 'BMI = Over Weight'
                   st.success(bmi)
               else:
-                  bmi = 'BMI = Obesity\n ****\n Do exercise'
+                  bmi = 'BMI = Obesity'
                   st.success(bmi)
           if (int(Insulin)>200):
-              ins='Insulin level is not in normal range\n ****\n medicine-1'
+              ins='Insulin level is not in normal range'
               st.success(ins)
           if (int(Insulin)== 0):
-              ins='Insulin deficiency\n ****\n medicine-1'
+              ins='Insulin deficiency'
               st.success(ins)
+          medicine = 'medicine'
+          st.success(medicine)
 
           vitals = '***REMAINING VITALS ARE NOT PROBLEMATIC AT PRESENT BUT TAKE CARE***'
           st.success (vitals)
@@ -251,36 +255,38 @@ if (selected == 'Heart Disease Prediction'):
           st.success(precaution)
           if (int(trestbps) > 100 or int(trestbps)<=60):
               if(int(trestbps)>100):
-                  bp =  'BloodPressure is High\n ****\n medicine-1'
+                  bp =  'BloodPressure is High'
                   st.success(bp)
               else:
-                  bp = 'BloodPressure is Low\n ****\n medicine-1'
+                  bp = 'BloodPressure is Low'
                   st.success(bp)
           if (int(age) <= 19 or int(age) >= 20):
               if(int(age)<= 19):
                   if(int(chol)>170):
-                      choles = 'Cholestrol is high\n ****\n medicine-1'
+                      choles = 'Cholestrol is high'
                       st.success(choles)
               if(int(age)>=20):
                   if(int(chol)>200):
-                      choles = 'Cholestrol is high\n ****\n medicine-1'
+                      choles = 'Cholestrol is high'
                       st.success(choles) 
           if (int(cp)>2):
-              chp = 'More chest pains recored (dangerous)\n ****\n medicine-1'
+              chp = 'More chest pains recored (dangerous)'
               st.success(chp)
           if (int(thalach)>100):
-              heartrate =' Heart rate is abnormal/more\n ****\n medicine-1'
+              heartrate =' Heart rate is abnormal/more'
               st.success(heartrate)
           if (int(slope)<2 or int(slope)>3):
               if(int(slope)==0):
-                  vessels='There is a blockage in the blood flow\n ****\n medicine-1'
+                  vessels='There is a blockage in the blood flow'
                   st.success(vessels)
               if(int(slope)>2):
-                  vessels='Blood flow is less\n ****\n medicine-1'
+                  vessels='Blood flow is less'
                   st.success(vessels)
               if(int(slope)<3):
-                  vessels='Fast blood flow\n ****\n medicine-1'
+                  vessels='Fast blood flow'
                   st.success(vessels)
+          medicine = 'medicine'
+          st.success(medicine)
         else:
           heart_diagnosis = '***THE PERSON DOES NOT HAVE HEART DISEASE***'
           st.success(heart_diagnosis)
@@ -288,36 +294,38 @@ if (selected == 'Heart Disease Prediction'):
           st.success(precaution)
           if (int(trestbps) > 100 or int(trestbps)<=60):
               if(int(trestbps)>100):
-                  bp =  'BloodPressure is High\n ****\n medicine-1'
+                  bp =  'BloodPressure is High'
                   st.success(bp)
               else:
-                  bp = 'BloodPressure is Low\n ****\n medicine-1'
+                  bp = 'BloodPressure is Low'
                   st.success(bp)
           if (int(age) <= 19 or int(age) >= 20):
               if(int(age)<= 19):
                   if(int(chol)>170):
-                      choles = 'Cholestrol is high\n ****\n medicine-1'
+                      choles = 'Cholestrol is high'
                       st.success(choles)
               if(int(age)>=20):
                   if(int(chol)>200):
-                      choles = 'Cholestrol is high\n ****\n medicine-1'
+                      choles = 'Cholestrol is high'
                       st.success(choles) 
           if (int(cp)>2):
-              chp = 'More chest pains recored (dangerous)\n ****\n medicine-1'
+              chp = 'More chest pains recored (dangerous)'
               st.success(chp)
           if (int(thalach)>100):
-              heartrate =' Heart rate is abnormal/more\n ****\n medicine-1'
+              heartrate =' Heart rate is abnormal/more'
               st.success(heartrate)
           if (int(slope)<2 or int(slope)>3):
               if(int(slope)==0):
-                  vessels='There is a blockage in the blood flow\n ****\n medicine-1'
+                  vessels='There is a blockage in the blood flow'
                   st.success(vessels)
               if(int(slope)>2):
-                  vessels='Blood flow is less\n ****\n medicine-1'
+                  vessels='Blood flow is less'
                   st.success(vessels)
               if(int(slope)<3):
-                  vessels='Fast blood flow\n ****\n medicine-1'
+                  vessels='Fast blood flow'
                   st.success(vessels)
+          medicine = 'medicine'
+          st.success(medicine)
           vitals = '***REMAINING VITALS ARE NOT PROBLEMATIC AT PRESENT BUT TAKE CARE***'
           st.success (vitals)
         
@@ -414,50 +422,52 @@ if (selected == "Parkinsons Prediction"):
           precaution='***ISSUES***'
           st.success(precaution)
           if (float(HNR) < 28.333 or float(fhi) > 755.25 or  float(Jitter_percent) > 0.00571 or float(Jitter_Abs) > 0.00008 or float(RAP) > 0.00374 or float(PPQ) > 0.00248 or float(DDP) > 0.01122 or float(Shimmer) > 0.03411 or float(Shimmer_dB) > 0.282 or float(APQ3) > 0.02185 or float(APQ5) > 0.03194 or float(APQ) > 0.01958 or float(DDA) > 0.02086 or float(NHR) > 0.02510 or float(RPDE) > 0.617 or float(DFA) > 0.818 or float(spread1) > -5.440 or float(spread2) > -4.137 or float(D2) > 3.671 or float(PPE) > 0.09221):
-              full='Vocal dysfunction\n ****\n medicine-1'
+              full='Vocal dysfunction'
               st.success(full)
           if (float(fo) > 255.66):
-              fo1='Jitter\n ****\n medicine-1'
+              fo1='Jitter'
               st.success(fo1)
           if (float(fhi) > 755.25 or float(fhi) < 102.145):
-              fo2='Vocal fold tension / Stiffness\n ****\n medicine-1'
+              fo2='Vocal fold tension / Stiffness'
               st.success(fo2)
           if (float(flo) > 226.778):
-              fo3='Vocal impairment, Reduced to produce low-frequency sounds\n ****\n medicine-1'
+              fo3='Vocal impairment, Reduced to produce low-frequency sounds'
               st.success(fo3)
           if (float(PPE) > 0.09221 or float(D2) > 3.671 or float(RPDE) > 0.617 or float(DDA) > 0.02086 or float(Jitter_percent) > 0.00571 or float(Jitter_Abs) > 0.00008 or float(RAP) > 0.00374 or float(DDP) > 0.01122 or float(Shimmer) > 0.03411 or float(Shimmer_dB) > 0.282 or float(APQ5) > 0.03194 or float(APQ) > 0.01958):
-              fo4='Increased vocal irregularity\n ****\n medicine-1'
+              fo4='Increased vocal irregularity'
               st.success(fo4)
           if (float(PPE) > 0.09221 or float(D2) > 3.671 or float(spread2) > -4.137 or float(spread1) > -5.440 or float(DFA) > 0.818 or float(DDA) > 0.02086 or float(fo) > 255.66 or float(APQ) > 0.01958 or float(RAP) > 0.00374 or float(PPQ) > 0.00248 or float(DDP) > 0.01122 or float(Shimmer) > 0.03411 or float(Shimmer_dB) > 0.282 or float(APQ3) > 0.02185):
-              fo5='Vocal Instability\n ****\n medicine-1'
+              fo5='Vocal Instability'
               st.success(fo5)
           if (float(PPQ) > 0.00248 or float(DDP) > 0.01122 or float(APQ3) > 0.02185 or float(APQ5) > 0.03194 or float(APQ) > 0.01958):
-              fo6='Vocal petrubation\n ****\n medicine-1'
+              fo6='Vocal petrubation'
               st.success(fo6)
           if (float(DDA) > 0.02086):
-              fo7='Dysphonia\n ****\n medicine-1'
+              fo7='Dysphonia'
               st.success(fo7)
           if (float(NHR) > 0.02510):
-              fo8='increased levels of noise relative to harmonics in their voice\n ****\n medicine-1'
+              fo8='increased levels of noise relative to harmonics in their voice'
               st.success(fo8)
           if (float(HNR) < 28.333):
-              fo9='Reduced vocal clarity and potentially higher background noise levels\n ****\n medicine-1'
+              fo9='Reduced vocal clarity and potentially higher background noise levels'
               st.success(fo9)
           if (float(PPE) > 0.09221 or float(D2) > 3.671 or float(DFA) > 0.818 or float(RPDE) > 0.617):
-              fo10='Vocal complexity\n ****\n medicine-1'
+              fo10='Vocal complexity'
               st.success(fo10)
           if (float(spread1) > -5.440):
-              fo11='Typical vocal behaviour\n ****\n medicine-1'
+              fo11='Typical vocal behaviour'
               st.success(fo11)
           if (float(fo) < 88.333):
-              fo12 ='potential worsening of vocal impairment and may indicate advanced disease progression or increased severity of symptoms\n ****\n medicine-1'
+              fo12 ='potential worsening of vocal impairment and may indicate advanced disease progression or increased severity of symptoms'
               st.success(fo12)
           if (float(fhi) < 102.145):
-              fo13 ='Reduced vocal fold vibratory range\n ****\n medicine-1'
+              fo13 ='Reduced vocal fold vibratory range'
               st.success(fo13)
           if (float(flo) < 65.476):
-              fo14 ='Reduced vocal fold vibration or breathiness\n ****\n medicine-1'
+              fo14 ='Reduced vocal fold vibration or breathiness'
               st.success(fo14)
+          medicine = 'medicine'
+          st.success(medicine)
             
           
         else:
@@ -466,49 +476,51 @@ if (selected == "Parkinsons Prediction"):
           precaution='***BUT SOME ISSUES***'
           st.success(precaution)
           if (float(HNR) < 28.333 or float(fhi) > 755.25 or  float(Jitter_percent) > 0.00571 or float(Jitter_Abs) > 0.00008 or float(RAP) > 0.00374 or float(PPQ) > 0.00248 or float(DDP) > 0.01122 or float(Shimmer) > 0.03411 or float(Shimmer_dB) > 0.282 or float(APQ3) > 0.02185 or float(APQ5) > 0.03194 or float(APQ) > 0.01958 or float(DDA) > 0.02086 or float(NHR) > 0.02510 or float(RPDE) > 0.617 or float(DFA) > 0.818 or float(spread1) > -5.440 or float(spread2) > -4.137 or float(D2) > 3.671 or float(PPE) > 0.09221):
-              full='Vocal dysfunction\n ****\n medicine-1'
+              full='Vocal dysfunction'
               st.success(full)
           if (float(fo) > 255.66):
-              fo1='Jitter\n ****\n medicine-1'
+              fo1='Jitter'
               st.success(fo1)
           if (float(fhi) > 755.25 or float(fhi) < 102.145):
-              fo2='Vocal fold tension / Stiffness\n ****\n medicine-1'
+              fo2='Vocal fold tension / Stiffness'
               st.success(fo2)
           if (float(flo) > 226.778):
-              fo3='Vocal impairment, Reduced to produce low-frequency sounds\n ****\n medicine-1'
+              fo3='Vocal impairment, Reduced to produce low-frequency sounds'
               st.success(fo3)
           if (float(PPE) > 0.09221 or float(D2) > 3.671 or float(RPDE) > 0.617 or float(DDA) > 0.02086 or float(Jitter_percent) > 0.00571 or float(Jitter_Abs) > 0.00008 or float(RAP) > 0.00374 or float(DDP) > 0.01122 or float(Shimmer) > 0.03411 or float(Shimmer_dB) > 0.282 or float(APQ5) > 0.03194 or float(APQ) > 0.01958):
-              fo4='Increased vocal irregularity\n ****\n medicine-1'
+              fo4='Increased vocal irregularity'
               st.success(fo4)
           if (float(PPE) > 0.09221 or float(D2) > 3.671 or float(spread2) > -4.137 or float(spread1) > -5.440 or float(DFA) > 0.818 or float(DDA) > 0.02086 or float(fo) > 255.66 or float(APQ) > 0.01958 or float(RAP) > 0.00374 or float(PPQ) > 0.00248 or float(DDP) > 0.01122 or float(Shimmer) > 0.03411 or float(Shimmer_dB) > 0.282 or float(APQ3) > 0.02185):
-              fo5='Vocal Instability\n ****\n medicine-1'
+              fo5='Vocal Instability'
               st.success(fo5)
           if (float(PPQ) > 0.00248 or float(DDP) > 0.01122 or float(APQ3) > 0.02185 or float(APQ5) > 0.03194 or float(APQ) > 0.01958):
-              fo6='Vocal petrubation\n ****\n medicine-1'
+              fo6='Vocal petrubation'
               st.success(fo6)
           if (float(DDA) > 0.02086):
-              fo7='Dysphonia\n ****\n medicine-1'
+              fo7='Dysphonia'
               st.success(fo7)
           if (float(NHR) > 0.02510):
-              fo8='increased levels of noise relative to harmonics in their voice\n ****\n medicine-1'
+              fo8='increased levels of noise relative to harmonics in their voice'
               st.success(fo8)
           if (float(HNR) < 28.333):
-              fo9='Reduced vocal clarity and potentially higher background noise levels\n ****\n medicine-1'
+              fo9='Reduced vocal clarity and potentially higher background noise levels'
               st.success(fo9)
           if (float(PPE) > 0.09221 or float(D2) > 3.671 or float(DFA) > 0.818 or float(RPDE) > 0.617):
-              fo10='Vocal complexity\n ****\n medicine-1'
+              fo10='Vocal complexity'
               st.success(fo10)
           if (float(spread1) > -5.440):
-              fo11='Typical vocal behaviour\n ****\n medicine-1'
+              fo11='Typical vocal behaviour'
               st.success(fo11)
           if (float(fo) < 88.333):
-              fo12 ='potential worsening of vocal impairment and may indicate advanced disease progression or increased severity of symptoms\n ****\n medicine-1'
+              fo12 ='potential worsening of vocal impairment and may indicate advanced disease progression or increased severity of symptoms'
               st.success(fo12)
           if (float(fhi) < 102.145):
-              fo13 ='Reduced vocal fold vibratory range\n ****\n medicine-1'
+              fo13 ='Reduced vocal fold vibratory range'
               st.success(fo13)
           if (float(flo) < 65.476):
-              fo14 ='Reduced vocal fold vibration or breathiness\n ****\n medicine-1'
+              fo14 ='Reduced vocal fold vibration or breathiness'
               st.success(fo14)
+          medicine = 'medicine'
+          st.success(medicine)
           vitals = '***REMAINING VITALS ARE NOT PROBLEMATIC AT PRESENT BUT TAKE CARE***'
           st.success (vitals)
